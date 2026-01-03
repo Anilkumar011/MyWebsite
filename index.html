@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Upset Page</title>
+    <title>Love Message</title>
 </head>
 <body>
 
-    <h2>I'm upset 😠</h2>
+    <button onclick="showLove()">Click here</button>
 
-    <button onclick="saySorry()">Say Sorry</button>
-
-    <p id="message"></p>
+    <div id="loveMessage"></div>
 
     <script>
-        function saySorry() {
-            document.getElementById("message").innerText =
-                "Ok, I forgive u for this time and don't repeat 😊";
+        function showLove() {
+            document.body.style.backgroundColor = "black";
+
+            document.getElementById("loveMessage").innerHTML =
+                "I LOVE YOU SOOO MUCH ❤️";
+
+            document.getElementById("loveMessage").style.color = "pink";
+            document.getElementById("loveMessage").style.fontSize = "60px";
+            document.getElementById("loveMessage").style.fontWeight = "bold";
+            document.getElementById("loveMessage").style.textAlign = "center";
+            document.getElementById("loveMessage").style.marginTop = "200px";
         }
     </script>
 
